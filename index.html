@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/vinho_icon.svg" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <img src="assets/img/logo.svg"/>
+        <nav>
+            <ul>
+                <li><a href="#services">Info</a></li>
+                <li><a href="#feedbacks">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="intro">
+        <div class="main">
+            <h1>Rosso di Montefalco</h1>
+            <p>Mi amet blandit dolor tellus sagittis, sem etiam ut. Ipsum auctor cursus ut id sed risus lacus ornare iaculis. Pellentesque felis diam adipiscing mattis. Semper semper amet ut sodales. </p>
+            <a href="#contact" class="button">Get in Touch</a>
+        </div>
+        <figure class="initial-figure">
+            <span class="circle"></span>
+            <img src="./assets/img/img_vinho.png" alt="Vinho principal" class="vinho"/>
+        </figure>
+    </section>
+    <a href="" class="arrow"><img src="assets/img/arrow.svg" alt=""></a>
+    <section id="services">
+        <h2>Rosso di Montefalcone</h2>
+        <p>Laoreet in a pretium, massa etiam bibendum. Fringilla ridiculus congue in amet nunc. Sit fames sit vulputate vulputate ullamcorper dolor, tempus velit. Amet condimentum enim faucibus viverra id amet dignissim imperdiet. </p>
+        <div class="container">
+            <div class="content">
+                <div class="circle_content">
+                    <img src="assets/img/vinho_icon.svg" alt="">
+                </div>
+                <h3>Vinho</h3>
+            </div>
+            <div class="content">
+                <div class="circle_content">
+                    <img src="assets/img/vinho_icon.svg" alt="">
+                </div>
+                <h3>Vinho</h3>
+            </div>
+            <div class="content">
+                <div class="circle_content">
+                    <img src="assets/img/vinho_icon.svg" alt="">
+                </div>
+                <h3>Vinho</h3>
+            </div>
+        </div>
+        <a href="#contact" class="button bg-white">Get in Touch</a>
+    </section>
+    <section class="feedbacks" id="feedbacks">
+        <div class="left">
+            <img src="./assets/img/img_01.png" alt="Foto de vinho">
+             <article class="comment">
+        <h2>Pietro Tosolini</h2>
+        <p>“Sem et diam velit fusce dictum amet cras a augue. Tincidunt arcu feugiat aliquam in eu. Eget molestie placerat at purus neque. Metus cursus in volutpat lacinia dignissim augue. Nec, dictumst odio vehicula at tellus. Mauris fusce sed at hendrerit fringilla. Quisque aenean.”</p>
+        <img src="assets/img/stars.svg" alt="avaliação">
+    </article>
+        </div>
+        <div class="right">
+             <article class="comment">
+        <h2>Pietro Tosolini</h2>
+        <p>“Sem et diam velit fusce dictum amet cras a augue. Tincidunt arcu feugiat aliquam in eu. Eget molestie placerat at purus neque. Metus cursus in volutpat lacinia dignissim augue. Nec, dictumst odio vehicula at tellus. Mauris fusce sed at hendrerit fringilla. Quisque aenean.”</p>
+        <img src="assets/img/stars.svg" alt="avaliação">
+    </article>
+            <img src="./assets/img/img_02.png" alt="Foto de vinho">
+        </div>
+        
+    </section>
+    <a href="#contact" class="button bg-primary feedbacks-button">Get in Touch</a>
+    <section class="itallic-banner">
+        <h4>"Vinum bonum deorum donum."</h4>
+    </section>
+    <footer id="footer">
+        <p class="footer-mail">info@loremipsum.com · 450 45 82 30</p>
+        <div class="footer-icons">
+            <a href="#"><img src="./assets/img/facebook.svg" alt="Facebook icon" /></a>
+            <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram icon" /></a>
+            <a href="#"><img src="./assets/img/linkedin.svg" alt="Linkedin icon" /></a>
+        </div>
+        <p class="copyright">Copyright ©<span id="date"></span></p>
+    </footer>
+   <script>
+        var date = new Date();
+        document.getElementById("date").innerHTML = date.getFullYear()
+   </script>
 </body>
 </html>
